@@ -1,0 +1,37 @@
+{
+  "name": "express-video-stream",
+  "version": "1.0.0",
+  "description": "Stream video files to the browser in chunks via ExpressJS",
+  "author": "Ari S",
+  "license": "ISC",
+  "scripts": {
+    "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' example/server.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariym/express-video-stream.git"
+  },
+  "keywords": [
+    "express",
+    "video",
+    "stream",
+    "range",
+    "safari",
+    "chrome"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.11.17",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.10.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+</head>
+
+<body>
+
+  <video  preload="auto" muted id="video-el" width="320" height="240" controls="true" playinline playsinline type="video/mp4"></video>
+  <br>
+  <input
+    id="input-video-name"
+    type="text"
+    onsubmit="updateSrc()"
+    placeholder="path to video"
+    style="width:300px"
+  >
+  <button onclick="updateSrc()">Load</button>
+</body>
+
+<script>
+  function updateSrc(){
+    const videoName = document.getElementById("input-video-name").value;
+
+    const videoUrl = `http://localhost:3001/stream?videoPath=${encodeURI(videoName)}`;
+
+    document.getElementById("video-el").setAttribute('src', videoUrl)
+  }
+
+  updateSrc()
+</script>
+
+</html>
