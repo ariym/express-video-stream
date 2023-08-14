@@ -13,8 +13,7 @@ Bare bones implementation of video streaming into Express with compatibility for
 
 ## Todo
 
-[ ] Make this project into a stand-alone node_module on NPM.
-
+- [ ] Make this project into a stand-alone node_module on NPM.
 - Move Express to devDependencies
 - Move example server file to test folder
 - Add 'build' and 'publish' scripts to package.json
